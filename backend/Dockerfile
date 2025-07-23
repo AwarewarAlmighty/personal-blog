@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 5000
 
 # The command to start your server, with a memory limit of 256MB
-CMD [ "node", "--max-old-space-size=256", "src/server.js" ]
+CMD [ "node", "--max-old-space-size=128", "src/server.js" ]
