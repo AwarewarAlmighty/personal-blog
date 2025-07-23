@@ -19,5 +19,5 @@ COPY . .
 # Expose the port your app will run on
 EXPOSE 5000
 
-# The command to start your server
-CMD [ "node", "src/server.js" ]
+# The command to start your server, with a memory limit of 256MB
+CMD [ "node", "--max-old-space-size=256", "src/server.js" ]
